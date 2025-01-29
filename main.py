@@ -57,8 +57,9 @@ def process_line(line, date, data):
         if result[0] != 'Scheme Code' and int(result[0]) in scheme_to_filter:
             # print(line)
             scheme_code = result[0]
+            scheme_name = result[1]
             nav = result[4]
-            update_data(data, scheme_code, date, nav)
+            update_data(data, scheme_code, scheme_name, date, nav)
 
 
 def load_data(filename):
@@ -69,6 +70,7 @@ def load_data(filename):
             for row in reader:
                 scheme_code = row['SCHEME_CODE']
                 data[scheme_code] = {
+                    "SCHEME_NAME" : row['SCHEME_NAME'],
                     "LATEST_DATE": row['LATEST_DATE'],
                     "LATEST_NAV": row['LATEST_NAV'],
                     "PREVIOUS_DATE": row['PREVIOUS_DATE'],
@@ -79,13 +81,14 @@ def load_data(filename):
 
 def save_data(filename, data):
     with open(filename, mode='w', newline='') as file:
-        fieldnames = ['SCHEME_CODE', 'LATEST_DATE', 'LATEST_NAV', 'PREVIOUS_DATE', 'PREVIOUS_NAV']
+        fieldnames = ['SCHEME_CODE', 'SCHEME_NAME', 'LATEST_DATE', 'LATEST_NAV', 'PREVIOUS_DATE', 'PREVIOUS_NAV']
         writer = csv.DictWriter(file, fieldnames=fieldnames)
         writer.writeheader()
         for scheme_code in sorted(data.keys()):
             values = data[scheme_code]
             writer.writerow({
                 'SCHEME_CODE': scheme_code,
+                'SCHEME_NAME': values['SCHEME_NAME'],
                 'LATEST_DATE': values['LATEST_DATE'],
                 'LATEST_NAV': values['LATEST_NAV'],
                 'PREVIOUS_DATE': values['PREVIOUS_DATE'],
@@ -94,15 +97,17 @@ def save_data(filename, data):
 
 
 # Function to update the data
-def update_data(data, scheme_code, latest_date, latest_nav):
+def update_data(data, scheme_code, scheme_name, latest_date, latest_nav):
     if scheme_code not in data:
         data[scheme_code] = {
+            "SCHEME_NAME" : scheme_name,
             "LATEST_DATE": latest_date,
             "LATEST_NAV": latest_nav,
             "PREVIOUS_DATE": None,
             "PREVIOUS_NAV": None
         }
     else:
+        data[scheme_code]["SCHEME_NAME"] = scheme_name
         data[scheme_code]["PREVIOUS_DATE"] = data[scheme_code]["LATEST_DATE"]
         data[scheme_code]["PREVIOUS_NAV"] = data[scheme_code]["LATEST_NAV"]
         data[scheme_code]["LATEST_DATE"] = latest_date
