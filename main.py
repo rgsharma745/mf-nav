@@ -1,7 +1,7 @@
+import csv
 import os
 import re
 from datetime import datetime, timedelta
-from pathlib import Path
 
 import requests
 
@@ -13,7 +13,7 @@ scheme_to_filter = {122639, 119598, 119544, 119065, 120468, 119598, 119212, 1204
                     120620, 127042}
 
 
-def fetch_nav_from_amfi(date):
+def fetch_nav_from_amfi(date, data):
     date_str = validate_and_format_date(date)
     if not date_str:
         print("Date is not valid")
@@ -25,7 +25,7 @@ def fetch_nav_from_amfi(date):
         return None
 
     for line in nav_data:
-        process_line(line, date)
+        process_line(line, date, data)
 
 
 def validate_and_format_date(date):
@@ -51,36 +51,62 @@ def fetch_nav_data(date_str):
     return response_text.split('\n')
 
 
-def process_line(line, date):
+def process_line(line, date, data):
     if len(re.findall(";", line)) == 7:
         result = line.split(";")
         if result[0] != 'Scheme Code' and int(result[0]) in scheme_to_filter:
-            #print(line)
+            # print(line)
             scheme_code = result[0]
             nav = result[4]
-            write_data_files(scheme_code, nav, date)
+            update_data(data, scheme_code, date, nav)
 
 
-def write_data_files(scheme_code, nav, date):
-    parent_dir = f'./data/{scheme_code}'
-    Path(parent_dir).mkdir(parents=True, exist_ok=True)
-    write_file( scheme_code, nav)
+def load_data(filename):
+    data = {}
+    if os.path.exists(filename):
+        with open(filename, mode='r', newline='') as file:
+            reader = csv.DictReader(file)
+            for row in reader:
+                scheme_code = row['SCHEME_CODE']
+                data[scheme_code] = {
+                    "LATEST_DATE": row['LATEST_DATE'],
+                    "LATEST_NAV": row['LATEST_NAV'],
+                    "PREVIOUS_DATE": row['PREVIOUS_DATE'],
+                    "PREVIOUS_NAV": row['PREVIOUS_NAV']
+                }
+    return data
 
 
-def is_today_date(date):
-    return datetime.strptime(date, "%d-%m-%Y").strftime("%d-%m-%Y") == datetime.today().strftime("%d-%m-%Y")
+def save_data(filename, data):
+    with open(filename, mode='w', newline='') as file:
+        fieldnames = ['SCHEME_CODE', 'LATEST_DATE', 'LATEST_NAV', 'PREVIOUS_DATE', 'PREVIOUS_NAV']
+        writer = csv.DictWriter(file, fieldnames=fieldnames)
+        writer.writeheader()
+        for scheme_code in sorted(data.keys()):
+            values = data[scheme_code]
+            writer.writerow({
+                'SCHEME_CODE': scheme_code,
+                'LATEST_DATE': values['LATEST_DATE'],
+                'LATEST_NAV': values['LATEST_NAV'],
+                'PREVIOUS_DATE': values['PREVIOUS_DATE'],
+                'PREVIOUS_NAV': values['PREVIOUS_NAV']
+            })
 
 
-def write_file( scheme_code, nav):
-    file_name_latest = f'./data/{scheme_code}/latest'
-    file_name_prev = f'./data/{scheme_code}/previous'
-    if os.path.exists(file_name_latest):
-        if os.path.exists(file_name_prev):
-            os.remove(file_name_prev)
-        os.rename(file_name_latest, file_name_prev)
-    with open(file_name_latest, 'w') as file:
-        file.write(nav)
-
+# Function to update the data
+def update_data(data, scheme_code, latest_date, latest_nav):
+    if scheme_code not in data:
+        data[scheme_code] = {
+            "LATEST_DATE": latest_date,
+            "LATEST_NAV": latest_nav,
+            "PREVIOUS_DATE": None,
+            "PREVIOUS_NAV": None
+        }
+    else:
+        data[scheme_code]["PREVIOUS_DATE"] = data[scheme_code]["LATEST_DATE"]
+        data[scheme_code]["PREVIOUS_NAV"] = data[scheme_code]["LATEST_NAV"]
+        data[scheme_code]["LATEST_DATE"] = latest_date
+        data[scheme_code]["LATEST_NAV"] = latest_nav
 
 
 def last_working_day(days_to_minus):
@@ -91,10 +117,13 @@ def last_working_day(days_to_minus):
     elif day_of_week == 5:
         last_working_date = today - timedelta(days=1 + days_to_minus)
     else:
-        last_working_date = today -  timedelta(days=1 + days_to_minus)
+        last_working_date = today - timedelta(days=1 + days_to_minus)
     return last_working_date.strftime("%d-%m-%Y")
 
+
 if __name__ == '__main__':
-    fetch_nav_from_amfi(last_working_day(1))
-    fetch_nav_from_amfi(last_working_day(0))
-    fetch_nav_from_amfi(datetime.today().strftime("%d-%m-%Y"))
+    csv_data = load_data('./data/nav.csv')
+    fetch_nav_from_amfi(last_working_day(1), csv_data)
+    fetch_nav_from_amfi(last_working_day(0), csv_data)
+    fetch_nav_from_amfi(datetime.today().strftime("%d-%m-%Y"), csv_data)
+    save_data('./data/nav.csv', csv_data)
