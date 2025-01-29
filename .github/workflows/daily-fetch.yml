@@ -2,10 +2,14 @@ name: Scheduled MF NAV Daily Fetch
 
 on:
   schedule:
+    - cron: '30 03 * * *'
     - cron: '30 05 * * *'
     - cron: '30 15 * * *'
     - cron: '30 16 * * *'
     - cron: '30 17 * * *'
+    - cron: '0 18 * * *'
+    - cron: '30 19 * * *'
+
   workflow_dispatch:
 
 jobs:
