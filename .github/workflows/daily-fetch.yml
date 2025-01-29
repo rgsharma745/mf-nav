@@ -1,0 +1,39 @@
+name: Scheduled MF NAV Daily Fetch
+
+on:
+  schedule:
+    - cron: '30 05 * * *'
+    - cron: '30 15 * * *'
+    - cron: '30 16 * * *'
+    - cron: '30 17 * * *'
+  workflow_dispatch:
+
+jobs:
+  build-fetch-and-commit:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'
+
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt
+
+    - name: Run main.py
+      run: python main.py
+
+    - name: Commit and Push Changes
+      run: |
+        git config --global user.name "MF Nav Bot"
+        git config --global user.email "bot@mfnavbot.in"
+        git add .
+        git commit -m "Daily NAV update by MF Nav Bot" || echo "No changes to commit"
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
