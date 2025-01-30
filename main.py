@@ -2,6 +2,7 @@ import csv
 import os
 import re
 from datetime import datetime, timedelta
+from typing import IO
 
 import requests
 
@@ -106,7 +107,7 @@ def update_data(data, scheme_code, scheme_name, latest_date, latest_nav):
             "PREVIOUS_DATE": None,
             "PREVIOUS_NAV": None
         }
-    else:
+    elif data[scheme_code]["LATEST_DATE"] != latest_date:
         data[scheme_code]["SCHEME_NAME"] = scheme_name
         data[scheme_code]["PREVIOUS_DATE"] = data[scheme_code]["LATEST_DATE"]
         data[scheme_code]["PREVIOUS_NAV"] = data[scheme_code]["LATEST_NAV"]
