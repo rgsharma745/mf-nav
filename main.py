@@ -71,18 +71,20 @@ def load_data(filename):
             for row in reader:
                 scheme_code = row['SCHEME_CODE']
                 data[scheme_code] = {
-                    "SCHEME_NAME" : row['SCHEME_NAME'],
+                    "SCHEME_NAME": row['SCHEME_NAME'],
                     "LATEST_DATE": row['LATEST_DATE'],
                     "LATEST_NAV": row['LATEST_NAV'],
                     "PREVIOUS_DATE": row['PREVIOUS_DATE'],
-                    "PREVIOUS_NAV": row['PREVIOUS_NAV']
+                    "PREVIOUS_NAV": row['PREVIOUS_NAV'],
+                    "% CHANGE": row['% CHANGE'],
                 }
     return data
 
 
 def save_data(filename, data):
     with open(filename, mode='w', newline='') as file:
-        fieldnames = ['SCHEME_CODE', 'SCHEME_NAME', 'LATEST_DATE', 'LATEST_NAV', 'PREVIOUS_DATE', 'PREVIOUS_NAV']
+        fieldnames = ['SCHEME_CODE', 'SCHEME_NAME', 'LATEST_DATE', 'LATEST_NAV', 'PREVIOUS_DATE', 'PREVIOUS_NAV',
+                      "% CHANGE"]
         writer = csv.DictWriter(file, fieldnames=fieldnames)
         writer.writeheader()
         for scheme_code in sorted(data.keys()):
@@ -93,7 +95,8 @@ def save_data(filename, data):
                 'LATEST_DATE': values['LATEST_DATE'],
                 'LATEST_NAV': values['LATEST_NAV'],
                 'PREVIOUS_DATE': values['PREVIOUS_DATE'],
-                'PREVIOUS_NAV': values['PREVIOUS_NAV']
+                'PREVIOUS_NAV': values['PREVIOUS_NAV'],
+                '% CHANGE': values['% CHANGE']
             })
 
 
@@ -101,7 +104,7 @@ def save_data(filename, data):
 def update_data(data, scheme_code, scheme_name, latest_date, latest_nav):
     if scheme_code not in data:
         data[scheme_code] = {
-            "SCHEME_NAME" : scheme_name,
+            "SCHEME_NAME": scheme_name,
             "LATEST_DATE": latest_date,
             "LATEST_NAV": latest_nav,
             "PREVIOUS_DATE": None,
@@ -113,6 +116,8 @@ def update_data(data, scheme_code, scheme_name, latest_date, latest_nav):
         data[scheme_code]["PREVIOUS_NAV"] = data[scheme_code]["LATEST_NAV"]
         data[scheme_code]["LATEST_DATE"] = latest_date
         data[scheme_code]["LATEST_NAV"] = latest_nav
+        data[scheme_code]["% CHANGE"] = round(((float(data[scheme_code]["LATEST_NAV"]) - float(
+            data[scheme_code]["PREVIOUS_NAV"])) / float(data[scheme_code]["LATEST_NAV"])) * 100, 2)
 
 
 def last_working_day(days_to_minus):
