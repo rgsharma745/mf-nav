@@ -11,7 +11,7 @@ EXPECTED_RESPONSE_START = "Scheme Code;Scheme Name;ISIN Div Payout/ISIN Growth;I
 
 scheme_to_filter = {122639, 119598, 119544, 119065, 120468, 119598, 119212, 120465, 105989, 120684, 118473, 120828,
                     118950, 120833, 152712, 149219, 120847, 151130, 151750, 118473, 145552, 148662, 152156, 152843,
-                    120620, 127042}
+                    120620, 127042, 148595}
 
 
 def fetch_nav_from_amfi(date, data):
