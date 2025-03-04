@@ -4,7 +4,7 @@ SCHEME_CODE,SCHEME_NAME,LATEST_DATE,LATEST_NAV,PREVIOUS_DATE,PREVIOUS_NAV,% CHAN
 118950,HDFC Focused 30 Fund - Growth Option - Direct Plan,04-03-2025,227.569,03-03-2025,228.046,-0.21
 119065,HDFC BSE Sensex Index Fund - Direct Plan,04-03-2025,688.1055,03-03-2025,689.0144,-0.13
 119212,DSP Small Cap Fund - Direct Plan - Growth,04-03-2025,173.341,03-03-2025,171.989,0.78
-119544,Aditya Birla Sun Life ELSS Tax Saver Fund - Growth - Direct Plan,03-03-2025,57.31,28-02-2025,57.1,0.37
+119544,Aditya Birla Sun Life ELSS Tax Saver Fund - Growth - Direct Plan,04-03-2025,57.53,03-03-2025,57.31,0.38
 119598,SBI BLUE CHIP FUND-DIRECT PLAN -GROWTH,04-03-2025,89.5754,03-03-2025,89.6964,-0.14
 120465,Axis Bluechip Fund - Direct Plan - Growth,04-03-2025,61.99,03-03-2025,62.02,-0.05
 120468,Axis Focused Fund - Direct Plan - Growth Option,04-03-2025,55.20,03-03-2025,54.98,0.4
@@ -14,12 +14,5 @@ SCHEME_CODE,SCHEME_NAME,LATEST_DATE,LATEST_NAV,PREVIOUS_DATE,PREVIOUS_NAV,% CHAN
 120833,quant Infrastructure Fund - Growth Option-Direct Plan,04-03-2025,35.2409,03-03-2025,35.0407,0.57
 120847,quant ELSS Tax Saver Fund - Growth Option - Direct Plan,04-03-2025,343.0948,03-03-2025,342.6515,0.13
 122639,Parag Parikh Flexi Cap Fund - Direct Plan - Growth,03-03-2025,82.8910,28-02-2025,83.4913,-0.72
-127042,Motilal Oswal Midcap Fund-Direct Plan-Growth Option,03-03-2025,101.4980,28-02-2025,101.2119,0.28
-145552,Motilal Oswal Nasdaq 100 Fund of Fund- Direct Plan Growth,03-03-2025,39.7939,28-02-2025,39.0069,1.98
-148662,Kotak NASDAQ 100 Fund of Fund - Direct Plan - Growth,03-03-2025,18.4993,28-02-2025,18.3338,0.89
-149219,ICICI Prudential NASDAQ 100 Index Fund - Direct Plan - Growth,03-03-2025,15.5532,28-02-2025,15.9153,-2.33
-151130,HSBC Small Cap Fund - Direct Growth,04-03-2025,75.1685,03-03-2025,74.0448,1.49
-151750,HDFC Defence Fund - Growth Option - Direct Plan,04-03-2025,17.104,03-03-2025,16.737,2.15
-152156,Zerodha Nifty LargeMidcap 250 Index Fund - Direct Plan - Growth option,04-03-2025,11.7694,03-03-2025,11.7626,0.06
-152712,Motilal Oswal Nifty India Defence Index Fund Direct Plan Growth,03-03-2025,6.8216,28-02-2025,6.7182,1.52
-152843,Bandhan BSE Healthcare Index Fund Regular Plan - Growth,04-03-2025,8.8435,03-03-2025,8.7906,0.6
+127042,Motilal Oswal Midcap Fund-Direct Plan-Growth Option,04-03-2025,101.4304,03-03-2025,101.4980,-0.07
+145552,Motilal Oswal Nasdaq 100 Fund of Fund- Direct Plan Growth,04-03-2025,38.7790,03-03-2025,39.7939,-2.62
