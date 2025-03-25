@@ -108,7 +108,8 @@ def update_data(data, scheme_code, scheme_name, latest_date, latest_nav):
             "LATEST_DATE": latest_date,
             "LATEST_NAV": latest_nav,
             "PREVIOUS_DATE": None,
-            "PREVIOUS_NAV": None
+            "PREVIOUS_NAV": None,
+            "% CHANGE": None
         }
     elif data[scheme_code]["LATEST_DATE"] != latest_date:
         data[scheme_code]["SCHEME_NAME"] = scheme_name
