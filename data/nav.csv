@@ -15,10 +15,10 @@ SCHEME_CODE,SCHEME_NAME,LATEST_DATE,LATEST_NAV,PREVIOUS_DATE,PREVIOUS_NAV,% CHAN
 120684,ICICI Prudential Nifty Next 50 Index Fund - Direct Plan -  Growth,24-04-2025,60.8538,23-04-2025,60.9455,-0.15
 120828,quant Small Cap Fund - Growth Option - Direct Plan,23-04-2025,259.9888,22-04-2025,259.4151,0.22
 120833,quant Infrastructure Fund - Growth Option-Direct Plan,23-04-2025,39.0946,22-04-2025,38.9446,0.38
-120847,quant ELSS Tax Saver Fund - Growth Option - Direct Plan,23-04-2025,388.0504,22-04-2025,384.3862,0.94
+120847,quant ELSS Tax Saver Fund - Growth Option - Direct Plan,24-04-2025,388.3082,23-04-2025,388.0504,0.07
 122639,Parag Parikh Flexi Cap Fund - Direct Plan - Growth,23-04-2025,87.7517,22-04-2025,87.1201,0.72
-127042,Motilal Oswal Midcap Fund-Direct Plan-Growth Option,23-04-2025,108.0410,22-04-2025,106.3869,1.53
-145552,Motilal Oswal Nasdaq 100 Fund of Fund- Direct Plan Growth,23-04-2025,35.9987,22-04-2025,35.1438,2.37
+127042,Motilal Oswal Midcap Fund-Direct Plan-Growth Option,24-04-2025,107.1860,23-04-2025,108.0410,-0.8
+145552,Motilal Oswal Nasdaq 100 Fund of Fund- Direct Plan Growth,24-04-2025,35.8393,23-04-2025,35.9987,-0.44
 147944,BANDHAN SMALL CAP FUND - REGULAR PLAN GROWTH,24-04-2025,43.049,23-04-2025,43.027,0.05
 148595,DSP Value Fund - Direct Plan - Growth,23-04-2025,20.854,22-04-2025,20.617,1.14
 148662,Kotak NASDAQ 100 Fund of Fund - Direct Plan - Growth,23-04-2025,16.3249,22-04-2025,15.7616,3.45
@@ -26,6 +26,6 @@ SCHEME_CODE,SCHEME_NAME,LATEST_DATE,LATEST_NAV,PREVIOUS_DATE,PREVIOUS_NAV,% CHAN
 151130,HSBC Small Cap Fund - Direct Growth,24-04-2025,83.7844,23-04-2025,84.1864,-0.48
 151750,HDFC Defence Fund - Growth Option - Direct Plan,24-04-2025,21.287,23-04-2025,21.329,-0.2
 152156,Zerodha Nifty LargeMidcap 250 Index Fund - Direct Plan - Growth option,24-04-2025,13.1781,23-04-2025,13.2094,-0.24
-152712,Motilal Oswal Nifty India Defence Index Fund Direct Plan Growth,23-04-2025,8.9702,22-04-2025,8.9098,0.67
+152712,Motilal Oswal Nifty India Defence Index Fund Direct Plan Growth,24-04-2025,8.9564,23-04-2025,8.9702,-0.15
 152843,Bandhan BSE Healthcare Index Fund Regular Plan - Growth,24-04-2025,9.8282,23-04-2025,9.7742,0.55
 152844,Bandhan BSE Healthcare Index Fund Direct Plan - Growth,24-04-2025,9.8781,23-04-2025,9.8237,0.55
