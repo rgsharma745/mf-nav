@@ -13,9 +13,9 @@ SCHEME_CODE,SCHEME_NAME,LATEST_DATE,LATEST_NAV,PREVIOUS_DATE,PREVIOUS_NAV,% CHAN
 120468,Axis Focused Fund - Direct Plan - Growth Option,13-06-2025,62.74,12-06-2025,63.09,-0.56
 120620,ICICI Prudential Nifty 50 Index Fund - Direct Plan Cumulative Option,13-06-2025,258.1723,12-06-2025,259.9275,-0.68
 120684,ICICI Prudential Nifty Next 50 Index Fund - Direct Plan -  Growth,13-06-2025,61.8763,12-06-2025,62.3799,-0.81
-120828,quant Small Cap Fund - Growth Option - Direct Plan,13-06-2025,275.013,12-06-2025,276.6008,-0.58
-120833,quant Infrastructure Fund - Growth Option-Direct Plan,13-06-2025,40.8101,12-06-2025,41.1005,-0.71
-120847,quant ELSS Tax Saver Fund - Growth Option - Direct Plan,13-06-2025,402.813,12-06-2025,405.1216,-0.57
+120828,quant Small Cap Fund - Growth Option - Direct Plan,16-06-2025,275.6176,13-06-2025,275.013,0.22
+120833,quant Infrastructure Fund - Growth Option-Direct Plan,16-06-2025,41.1095,13-06-2025,40.8101,0.73
+120847,quant ELSS Tax Saver Fund - Growth Option - Direct Plan,16-06-2025,404.7765,13-06-2025,402.813,0.49
 122639,Parag Parikh Flexi Cap Fund - Direct Plan - Growth,13-06-2025,90.6725,12-06-2025,91.0594,-0.43
 127042,Motilal Oswal Midcap Fund-Direct Plan-Growth Option,13-06-2025,114.5106,12-06-2025,114.5219,-0.01
 145552,Motilal Oswal Nasdaq 100 Fund of Fund- Direct Plan Growth,13-06-2025,38.1112,12-06-2025,38.2892,-0.47
@@ -25,7 +25,7 @@ SCHEME_CODE,SCHEME_NAME,LATEST_DATE,LATEST_NAV,PREVIOUS_DATE,PREVIOUS_NAV,% CHAN
 149219,ICICI Prudential NASDAQ 100 Index Fund - Direct Plan - Growth,13-06-2025,16.2415,12-06-2025,16.3445,-0.63
 151130,HSBC Small Cap Fund - Direct Growth,13-06-2025,90.7204,12-06-2025,91.1014,-0.42
 151750,HDFC Defence Fund - Growth Option - Direct Plan,13-06-2025,25.854,12-06-2025,25.578,1.07
-152156,Zerodha Nifty LargeMidcap 250 Index Fund - Direct Plan - Growth option,13-06-2025,13.7374,12-06-2025,13.8093,-0.52
+152156,Zerodha Nifty LargeMidcap 250 Index Fund - Direct Plan - Growth option,16-06-2025,13.8503,13-06-2025,13.7374,0.82
 152712,Motilal Oswal Nifty India Defence Index Fund Direct Plan Growth,13-06-2025,11.5166,12-06-2025,11.3453,1.49
 152843,Bandhan BSE Healthcare Index Fund Regular Plan - Growth,13-06-2025,10.0602,12-06-2025,10.0525,0.08
 152844,Bandhan BSE Healthcare Index Fund Direct Plan - Growth,13-06-2025,10.1224,12-06-2025,10.1144,0.08
