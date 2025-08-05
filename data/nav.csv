@@ -1,7 +1,7 @@
 SCHEME_CODE,SCHEME_NAME,LATEST_DATE,LATEST_NAV,PREVIOUS_DATE,PREVIOUS_NAV,% CHANGE
 100522,Franklin India Technology Fund-Growth,04-08-2025,505.6820,01-08-2025,499.5464,1.21
 102594,ICICI Prudential Value Fund (erstwhile Value Discovery Fund) - Growth,04-08-2025,464.83,01-08-2025,462.09,0.59
-103360,Franklin India Small Cap Fund-Growth,04-08-2025,170.7845,01-08-2025,170.2300,0.32
+103360,Franklin India Small Cap Fund-Growth,05-08-2025,170.0241,04-08-2025,170.7845,-0.45
 105989,DSP Small Cap Fund - Regular - Growth,04-08-2025,196.668,01-08-2025,195.548,0.57
 118473,BANDHAN ELSS Tax Saver Fund - Direct Plan - Growth,04-08-2025,172.037,01-08-2025,170.852,0.69
 118950,HDFC Focused Fund - Growth Option - Direct Plan,04-08-2025,258.201,01-08-2025,256.787,0.55
@@ -13,9 +13,9 @@ SCHEME_CODE,SCHEME_NAME,LATEST_DATE,LATEST_NAV,PREVIOUS_DATE,PREVIOUS_NAV,% CHAN
 120468,Axis Focused Fund - Direct Plan - Growth Option,04-08-2025,63.27,01-08-2025,62.74,0.84
 120620,ICICI Prudential Nifty 50 Index Fund - Direct Plan Cumulative Option,04-08-2025,259.0931,01-08-2025,257.4528,0.63
 120684,ICICI Prudential Nifty Next 50 Index Fund - Direct Plan -  Growth,04-08-2025,61.9847,01-08-2025,61.2850,1.13
-120828,quant Small Cap Fund - Growth Option - Direct Plan,04-08-2025,277.3773,01-08-2025,274.5672,1.01
-120833,quant Infrastructure Fund - Growth Option-Direct Plan,04-08-2025,40.5912,01-08-2025,40.2064,0.95
-120847,quant ELSS Tax Saver Fund - Growth Option - Direct Plan,04-08-2025,403.4596,01-08-2025,397.7534,1.41
+120828,quant Small Cap Fund - Growth Option - Direct Plan,05-08-2025,275.4747,04-08-2025,277.3773,-0.69
+120833,quant Infrastructure Fund - Growth Option-Direct Plan,05-08-2025,40.5137,04-08-2025,40.5912,-0.19
+120847,quant ELSS Tax Saver Fund - Growth Option - Direct Plan,05-08-2025,400.8827,04-08-2025,403.4596,-0.64
 122639,Parag Parikh Flexi Cap Fund - Direct Plan - Growth,04-08-2025,91.6751,01-08-2025,91.3302,0.38
 127042,Motilal Oswal Midcap Fund-Direct Plan-Growth Option,04-08-2025,118.0363,01-08-2025,116.2041,1.55
 145552,Motilal Oswal Nasdaq 100 Fund of Fund- Direct Plan Growth,04-08-2025,42.3701,01-08-2025,43.2003,-1.96
@@ -25,7 +25,7 @@ SCHEME_CODE,SCHEME_NAME,LATEST_DATE,LATEST_NAV,PREVIOUS_DATE,PREVIOUS_NAV,% CHAN
 149219,ICICI Prudential NASDAQ 100 Index Fund - Direct Plan - Growth,04-08-2025,17.669,01-08-2025,17.318,1.99
 151130,HSBC Small Cap Fund - Direct Growth,04-08-2025,90.3848,01-08-2025,89.6926,0.77
 151750,HDFC Defence Fund - Growth Option - Direct Plan,04-08-2025,23.724,01-08-2025,23.158,2.39
-152156,Zerodha Nifty LargeMidcap 250 Index Fund - Direct Plan - Growth option,04-08-2025,13.7396,01-08-2025,13.6124,0.93
+152156,Zerodha Nifty LargeMidcap 250 Index Fund - Direct Plan - Growth option,05-08-2025,13.7075,04-08-2025,13.7396,-0.23
 152712,Motilal Oswal Nifty India Defence Index Fund Direct Plan Growth,04-08-2025,10.2239,01-08-2025,9.9722,2.46
 152843,Bandhan BSE Healthcare Index Fund Regular Plan - Growth,04-08-2025,10.1619,01-08-2025,10.1343,0.27
 152844,Bandhan BSE Healthcare Index Fund Direct Plan - Growth,04-08-2025,10.2364,01-08-2025,10.2079,0.28
