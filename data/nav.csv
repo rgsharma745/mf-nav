@@ -8,14 +8,14 @@ SCHEME_CODE,SCHEME_NAME,LATEST_DATE,LATEST_NAV,PREVIOUS_DATE,PREVIOUS_NAV,% CHAN
 119065,HDFC BSE Sensex Index Fund - Direct Plan,02-01-2026,815.465,01-01-2026,810.0167,0.67
 119212,DSP Small Cap Fund - Direct Plan - Growth,02-01-2026,218.508,01-01-2026,216.738,0.81
 119544,Aditya Birla Sun Life ELSS Tax Saver Fund - Growth - Direct Plan,02-01-2026,70.75,01-01-2026,70.1,0.92
-119598,SBI Large Cap FUND-DIRECT PLAN -GROWTH,02-01-2026,108.1466,01-01-2026,107.3311,0.75
+119598,SBI Large Cap FUND-DIRECT PLAN -GROWTH,05-01-2026,107.9636,02-01-2026,108.1466,-0.17
 120465,Axis Large Cap Fund - Direct Plan - Growth,02-01-2026,72.38,01-01-2026,71.83,0.76
 120468,Axis Focused Fund - Direct Plan - Growth Option,02-01-2026,63.70,01-01-2026,63.19,0.8
 120620,ICICI Prudential Nifty 50 Index Fund - Direct Plan Cumulative Option,02-01-2026,276.5219,01-01-2026,274.6144,0.69
 120684,ICICI Prudential Nifty Next 50 Index Fund - Direct Plan -  Growth,02-01-2026,65.2637,01-01-2026,64.5776,1.05
-120828,quant Small Cap Fund - Growth Option - Direct Plan,02-01-2026,278.5669,01-01-2026,276.8784,0.61
-120833,quant Infrastructure Fund - Growth Option-Direct Plan,02-01-2026,42.1513,01-01-2026,41.9854,0.39
-120847,quant ELSS Tax Saver Fund - Growth Option - Direct Plan,02-01-2026,430.0052,01-01-2026,427.3583,0.62
+120828,quant Small Cap Fund - Growth Option - Direct Plan,05-01-2026,277.8661,02-01-2026,278.5669,-0.25
+120833,quant Infrastructure Fund - Growth Option-Direct Plan,05-01-2026,41.8743,02-01-2026,42.1513,-0.66
+120847,quant ELSS Tax Saver Fund - Growth Option - Direct Plan,05-01-2026,428.5282,02-01-2026,430.0052,-0.34
 122639,Parag Parikh Flexi Cap Fund - Direct Plan - Growth,02-01-2026,95.2985,01-01-2026,94.9335,0.38
 127042,Motilal Oswal Midcap Fund-Direct Plan-Growth Option,02-01-2026,114.6253,01-01-2026,113.9116,0.62
 145552,Motilal Oswal Nasdaq 100 Fund of Fund- Direct Plan Growth,02-01-2026,49.6160,01-01-2026,49.5403,0.15
@@ -25,7 +25,7 @@ SCHEME_CODE,SCHEME_NAME,LATEST_DATE,LATEST_NAV,PREVIOUS_DATE,PREVIOUS_NAV,% CHAN
 149219,ICICI Prudential NASDAQ 100 Index Fund - Direct Plan - Growth,02-01-2026,19.7652,31-12-2025,19.7535,0.06
 151130,HSBC Small Cap Fund - Direct Growth,02-01-2026,87.9413,01-01-2026,87.3064,0.72
 151750,HDFC Defence Fund - Growth Option - Direct Plan,02-01-2026,24.199,01-01-2026,24.001,0.82
-152156,Zerodha Nifty LargeMidcap 250 Index Fund - Direct Plan - Growth option,02-01-2026,14.6183,01-01-2026,14.4954,0.84
+152156,Zerodha Nifty LargeMidcap 250 Index Fund - Direct Plan - Growth option,05-01-2026,14.5928,02-01-2026,14.6183,-0.17
 152712,Motilal Oswal Nifty India Defence Index Fund Direct Plan Growth,02-01-2026,10.1993,01-01-2026,10.1213,0.76
 152843,Bandhan BSE Healthcare Index Fund Regular Plan - Growth,02-01-2026,10.0476,01-01-2026,9.9742,0.73
 152844,Bandhan BSE Healthcare Index Fund Direct Plan - Growth,02-01-2026,10.1548,01-01-2026,10.0804,0.73
