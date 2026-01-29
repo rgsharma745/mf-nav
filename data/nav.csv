@@ -1,21 +1,21 @@
 SCHEME_CODE,SCHEME_NAME,LATEST_DATE,LATEST_NAV,PREVIOUS_DATE,PREVIOUS_NAV,% CHANGE
 100522,Franklin India Technology Fund-Growth,28-01-2026,525.1857,27-01-2026,523.3597,0.35
-102594,ICICI Prudential Value Fund (erstwhile Value Discovery Fund) - Growth,28-01-2026,485.87,27-01-2026,483.26,0.54
-103360,Franklin India Small Cap Fund-Growth,28-01-2026,156.8290,27-01-2026,154.4291,1.53
+102594,ICICI Prudential Value Fund (erstwhile Value Discovery Fund) - Growth,29-01-2026,486.40,28-01-2026,485.87,0.11
+103360,Franklin India Small Cap Fund-Growth,29-01-2026,156.3099,28-01-2026,156.8290,-0.33
 105989,DSP Small Cap Fund - Regular - Growth,28-01-2026,183.582,27-01-2026,181.227,1.28
 118473,BANDHAN ELSS Tax Saver Fund - Direct Plan - Growth,28-01-2026,177.231,27-01-2026,175.068,1.22
-118950,HDFC Focused Fund - Growth Option - Direct Plan,28-01-2026,266.562,27-01-2026,265.72,0.32
-119065,HDFC BSE Sensex Index Fund - Direct Plan,28-01-2026,783.0456,27-01-2026,778.4185,0.59
+118950,HDFC Focused Fund - Growth Option - Direct Plan,29-01-2026,266.946,28-01-2026,266.562,0.14
+119065,HDFC BSE Sensex Index Fund - Direct Plan,29-01-2026,785.1489,28-01-2026,783.0456,0.27
 119212,DSP Small Cap Fund - Direct Plan - Growth,28-01-2026,202.686,27-01-2026,200.081,1.29
 119544,Aditya Birla Sun Life ELSS Tax Saver Fund - Growth - Direct Plan,28-01-2026,68.17,27-01-2026,67.59,0.85
 119598,SBI Large Cap FUND-DIRECT PLAN -GROWTH,28-01-2026,104.9375,27-01-2026,104.0972,0.8
 120465,Axis Large Cap Fund - Direct Plan - Growth,28-01-2026,69.69,27-01-2026,69.03,0.95
 120468,Axis Focused Fund - Direct Plan - Growth Option,28-01-2026,60.77,27-01-2026,60.07,1.15
-120620,ICICI Prudential Nifty 50 Index Fund - Direct Plan Cumulative Option,28-01-2026,266.2961,27-01-2026,264.5405,0.66
-120684,ICICI Prudential Nifty Next 50 Index Fund - Direct Plan -  Growth,28-01-2026,63.2087,27-01-2026,61.8131,2.21
-120828,quant Small Cap Fund - Growth Option - Direct Plan,28-01-2026,253.8904,27-01-2026,250.3708,1.39
-120833,quant Infrastructure Fund - Growth Option-Direct Plan,28-01-2026,38.3008,27-01-2026,37.7497,1.44
-120847,quant ELSS Tax Saver Fund - Growth Option - Direct Plan,28-01-2026,396.4021,27-01-2026,393.5458,0.72
+120620,ICICI Prudential Nifty 50 Index Fund - Direct Plan Cumulative Option,29-01-2026,267.0940,28-01-2026,266.2961,0.3
+120684,ICICI Prudential Nifty Next 50 Index Fund - Direct Plan -  Growth,29-01-2026,63.3972,28-01-2026,63.2087,0.3
+120828,quant Small Cap Fund - Growth Option - Direct Plan,29-01-2026,253.6303,28-01-2026,253.8904,-0.1
+120833,quant Infrastructure Fund - Growth Option-Direct Plan,29-01-2026,38.7225,28-01-2026,38.3008,1.09
+120847,quant ELSS Tax Saver Fund - Growth Option - Direct Plan,29-01-2026,400.1224,28-01-2026,396.4021,0.93
 122639,Parag Parikh Flexi Cap Fund - Direct Plan - Growth,28-01-2026,93.7598,27-01-2026,93.1653,0.63
 127042,Motilal Oswal Midcap Fund-Direct Plan-Growth Option,28-01-2026,106.4244,27-01-2026,105.3361,1.02
 145552,Motilal Oswal Nasdaq 100 Fund of Fund- Direct Plan Growth,28-01-2026,49.6880,27-01-2026,49.9528,-0.53
@@ -24,8 +24,8 @@ SCHEME_CODE,SCHEME_NAME,LATEST_DATE,LATEST_NAV,PREVIOUS_DATE,PREVIOUS_NAV,% CHAN
 148662,Kotak US Specific Equity Passive FOF- Direct Plan - Growth,28-01-2026,24.2338,27-01-2026,24.2096,0.1
 149219,ICICI Prudential NASDAQ 100 Index Fund - Direct Plan - Growth,28-01-2026,20.7629,27-01-2026,20.7262,0.18
 151130,HSBC Small Cap Fund - Direct Growth,28-01-2026,81.8077,27-01-2026,80.2797,1.87
-151750,HDFC Defence Fund - Growth Option - Direct Plan,28-01-2026,24.906,27-01-2026,23.467,5.78
-152156,Zerodha Nifty LargeMidcap 250 Index Fund - Direct Plan - Growth option,28-01-2026,13.9976,27-01-2026,13.8221,1.25
+151750,HDFC Defence Fund - Growth Option - Direct Plan,29-01-2026,24.61,28-01-2026,24.906,-1.2
+152156,Zerodha Nifty LargeMidcap 250 Index Fund - Direct Plan - Growth option,29-01-2026,14.0263,28-01-2026,13.9976,0.2
 152712,Motilal Oswal Nifty India Defence Index Fund Direct Plan Growth,28-01-2026,10.6943,27-01-2026,10.0000,6.49
 152843,Bandhan BSE Healthcare Index Fund Regular Plan - Growth,28-01-2026,9.4006,27-01-2026,9.4006,0.0
 152844,Bandhan BSE Healthcare Index Fund Direct Plan - Growth,28-01-2026,9.5063,27-01-2026,9.5061,0.0
